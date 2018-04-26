@@ -26,3 +26,6 @@ Route::get('/contact', function () {
 Route::get('/product-detail', function () {
     return view('product-detail');
 })->name('product-detail');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
