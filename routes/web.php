@@ -13,4 +13,12 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shop');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
